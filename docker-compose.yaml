@@ -1,0 +1,14 @@
+---
+services:
+  novnc-soapui:  
+    image: soapui-in-docker:bullseye
+    environment:
+      # Adjust to your screen size
+      - DISPLAY_WIDTH=1600
+      - DISPLAY_HEIGHT=968
+    ports:
+      - "8088:8080"
+    networks:
+      - x11
+networks:
+  x11:
