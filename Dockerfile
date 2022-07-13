@@ -28,6 +28,12 @@ RUN chmod +x /config/SoapUI-x64-5.7.0.sh && \
 # SoapUI desktop file here so it will start on auto login and add the 
 # desktop icon as well.
 #
-RUN mkdir -p /config/.config/autostart 
-COPY SoapUI-5.7.0.desktop /config/.config/autostart
-COPY SoapUI-5.7.0.desktop /config/Desktop
+
+# copy the desktop file to the /config directory
+COPY SoapUI-5.7.0.desktop .
+
+# create the custom-cont-init.d directory if it does exist and copy
+# the soapui.sh script here. This script will be picked up and run automatically
+RUN mkdir -p /config/custom-cont-init.d
+COPY soapui.sh /config/custom-cont-init.d
+RUN chmod +x /config/custom-cont-init.d/soapui.sh
