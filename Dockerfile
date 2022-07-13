@@ -23,11 +23,6 @@ RUN chmod +x /config/SoapUI-x64-5.7.0.sh && \
     /config/SoapUI-x64-5.7.0.sh -q && \
     rm -rf /config/SoapUI-x64-5.7.0.sh \
           /config/SmartBear/SoapUI-5.7.0/jre
-#
-# if the autostart directory doesn't exist already create it and copy the 
-# SoapUI desktop file here so it will start on auto login and add the 
-# desktop icon as well.
-#
 
 # copy the desktop file to the /config directory
 COPY SoapUI-5.7.0.desktop .
