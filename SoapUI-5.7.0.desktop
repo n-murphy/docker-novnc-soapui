@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/local/SmartBear/SoapUI-5.7.0/bin/SoapUI-5.7.0
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[C]=SoapUI 5.7.0
+Name=SoapUI 5.7.0
+Comment[C]=SoapUI 5.7.0
+Comment=SoapUI 5.7.0
+Icon=/usr/local/SmartBear/SoapUI-5.7.0/.install4j/SoapUI-5.7.0.png
+X-MATE-Autostart-Delay=0
