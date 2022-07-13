@@ -2,7 +2,7 @@
 version: "2.1"
 services:
   webtop:
-    image: soapui-in-docker:ubuntu-mate # placeholder local image
+    image: docker-soapui:ubuntu-mate # placeholder local image
     container_name: soapui-webtop
     security_opt:
       - seccomp:unconfined  # optional
